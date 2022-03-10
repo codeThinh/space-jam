@@ -1,15 +1,4 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Creative v7.0.5 (https://startbootstrap.com/theme/creative)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap v5.1.3 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11806,13 +11795,31 @@ header.masthead .h1 {
   }
 }
 
-.masthead-bg {
+.masthead-bg-about {
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0.8) 100%
     ),
-    url("../assets/img/Hackathon_notapagweb.jpg");
+    url("../assets/img/mashead_about.jpg");
+}
+
+.masthead-bg-services {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("../assets/img/masthead_services.jpg");
+}
+
+.masthead-bg-locations {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("../assets/img/masthead_locations.jpg");
 }
 
 #portfolio .container-fluid,
