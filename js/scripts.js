@@ -43,3 +43,11 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+function modalCenter() {
+    $('#signUpModal').css({
+        'display': 'flex',
+        'justify-content': 'center',
+        'align-items': 'center'
+    })
+}
