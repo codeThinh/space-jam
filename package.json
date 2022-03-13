@@ -4,17 +4,9 @@
   "description": "",
   "main": "js/main.js",
   "scripts": {
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
-    "clean": "rimraf dist",
-    "imagemin": "imagemin img/* -o dist/img",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "lite": "lite-server",
-    "scss": "node-sass -o css/ css/",
-    "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin locations.html -d dist --htmlmin -o dist/locations.html && usemin services.html -d dist --htmlmin -o dist/services.html"
+    "start": "npm run lite"
   },
   "author": "Michael & Thinh",
   "license": "ISC",
@@ -27,12 +19,7 @@
   },
   "devDependencies": {
     "copyfiles": "^2.2.0",
-    "imagemin-cli": "^5.1.0",
-    "lite-server": "^2.6.1",
-    "node-sass": "^6.0.1",
-    "onchange": "^7.0.0",
-    "parallelshell": "3.0.1",
-    "rimraf": "^3.0.2",
-    "usemin-cli": "^0.6.0"
+    "lite-server": "^2.6.1"
+
   }
 }
