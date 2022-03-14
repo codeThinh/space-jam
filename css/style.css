@@ -138,14 +138,18 @@ header.masthead .h1 {
   }
 }
 
-.masthead-bg-about {
+/* about */
+
+.masthead-bg-aboutus {
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0.8) 100%
     ),
-    url("../img/mashead_about.jpg");
+    url("../img/masthead-about-us.jpg");
 }
+
+/* services */
 
 .masthead-bg-services {
   background: linear-gradient(
@@ -156,6 +160,8 @@ header.masthead .h1 {
     url("../img/masthead_services.jpg");
 }
 
+/* location */
+
 .masthead-bg-locations {
   background: linear-gradient(
       to bottom,
@@ -165,11 +171,11 @@ header.masthead .h1 {
     url("../img/masthead_locations.jpg");
 }
 
-.masthead-bg-aboutus {
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0.8) 100%
-    ),
-    url("../img/masthead-about-us.jpg");
+.location-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.hide {
+  display: none;
 }

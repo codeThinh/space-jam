@@ -112,7 +112,7 @@
             </div>
         </header>
         <!-- Locations-->
-        <section class="page-section bg-primary" id="locations">
+        <section class="page-section bg-black" id="locations">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-12 text-center">
@@ -120,37 +120,22 @@
                         <hr class="divider" />
                         <div class="row">
                             <div>
-                                api? db? for map<br><br>
-                                {   
-                                    id: 001,
-                                    city: "Seattle",
-                                    state: "Washington",
-                                    address: "1234 Main St",
-                                    hasDedicated: true;
-                                    hasStandard: true;
-                                    hasSuite: true;
-                                    hasFullFl: false;
-                                }<br><br>
-                                {   
-                                    id: 002,
-                                    city: "San Francisco",
-                                    state: "California",
-                                    address: "5678 Silicon Rd",
-                                    hasDedicated: true;
-                                    hasStandard: true;
-                                    hasSuite: false;
-                                    hasFullFl: false;
-                                }
-                                {<br><br>
-                                    id: 003,
-                                    city: "Los Angeles",
-                                    state: "California",
-                                    address: "910 Hollywood Blvd",
-                                    hasDedicated: false;
-                                    hasStandard: true;
-                                    hasSuite: true;
-                                    hasFullFl: true;
-                                }<br>
+                                <div class="d-flex flex-column gap-1 text-white form-group">
+                                    <label for="search">Search For A Location</label>
+                                    <input class="form-control input-lg" type="search" id="search" placeholder="Search address or name here ..."data-search>
+                                </div>
+                                <div class="location-cards gap-3 mt-3" data-location-cards-container>
+                                </div>
+                                <template data-location-template>
+                                    <div class="card p-2 border-3 border-primary">
+                                        <img class="card-img-top" src="./img/masthead_about.jpg" data-src alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title" data-header></h5>
+                                            <p class="card-text" data-body></p>
+                                            <a href="#" class="btn btn-primary">Details</a>
+                                        </div>
+                                    </div>
+                                </template>
                             </div>
                         </div>
                     </div>
