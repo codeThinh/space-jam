@@ -70,15 +70,17 @@ searchInput.addEventListener("input", x => {
     })
 })
 
-fetch("https://jsonplaceholder.typicode.com/users")
+fetch("./js/locations.json")
     .then(res => res.json())
     .then(data => {
     locations = data.map(location => {
         const card = locationCardTemplate.content.cloneNode(true).children[0]
-        const header = card.querySelector("[data-header]")
-        const body = card.querySelector("[data-body]")
-        header.textContent = location.company.name
-        body.textContent = location.address.street + ", " + location.address.city
+        const name = card.querySelector("[data-name]")
+        const add = card.querySelector("[data-add]")
+        const city = card.querySelector("[data-city]")
+        name.textContent = location.company.name
+        add.textContent = location.address.street + ", "
+        city.textContent = location.address.city + ", " + location.address.state + ", " + location.address.zipcode
         locationCardContainer.append(card)
         return { company: location.company.name, city: location.address.street + ", " + location.address.city, element: card }
     })
