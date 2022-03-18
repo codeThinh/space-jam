@@ -44,8 +44,10 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+bookBtn.addEventListener('click', modalCenter);
+
 function modalCenter() {
-    $('#signUpModal').css({
+    $('#bookModal').css({
         'display': 'flex',
         'justify-content': 'center',
         'align-items': 'center'
